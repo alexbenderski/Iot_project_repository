@@ -143,7 +143,7 @@ physiotherapistsRef.once('value').then(function(snapshot) {
             if (ids.includes(id)) {
                 console.log(id + " is present in the array.");
 
-                window.location.href = "https://github.com/alexbenderski/Iot_project_repository/blob/main/firebase2html_4.html?physID=" + id;
+                window.location.href = "https://github.com/alexbenderski/Iot_project_repository/raw/main/firebase2html_4.html?physID=" + id;
 
 
 
@@ -155,7 +155,7 @@ physiotherapistsRef.once('value').then(function(snapshot) {
                 database.ref('patients').child(id).once('value').then(snapshot => {
                 if (snapshot.exists()) {
                     // Successful login
-                    window.location.href = "https://github.com/alexbenderski/Iot_project_repository/blob/main/firebase2html_4.html?patientID=" + id;
+                    window.location.href = "https://github.com/alexbenderski/Iot_project_repository/raw/main/firebase2html_4.html?patientID=" + id;
                 } else {
                     alert('Invalid ID. Please try again.');
                 }
